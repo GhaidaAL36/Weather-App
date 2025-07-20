@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Lato", sans-serif;
+  background: #222;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  margin: 100px auto 0;
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.search-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.search-section input {
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  color: #414141;
+  background-color: #ebfffc;
+  font-size: 16px;
+}
+
+.search-section input::placeholder {
+  color: #414141;
+}
+
+.search-section button {
+  padding: 8px;
+  border-radius: 18px;
+  border: none;
+  color: #414141;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.search-section button:hover {
+  transform: scale(1.1);
+}
+
+.weather-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.weather-icon{
+    object-fit: cover;
+}
+
+.weather-temp{
+    text-align: center;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.city-name{
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.col i {
+  font-size: 32px;
+  color: #ebfffc;
+}
+
+.col-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.col-details h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.col-details p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.error-message{
+    color: #fe3700;
+    font-size: 20px;
+    font-weight: 800;
+}
